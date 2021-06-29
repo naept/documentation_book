@@ -1,0 +1,74 @@
+\setchapterpreamble[u]{\margintoc}
+\chapter{Why writing project documentation is boring?}
+
+“We’ll have to do documentation again ? Really !”
+
+We hear this a lot when we tell a teammate he will have to write some documentation for the project. We are engineers and we have had to deliver many many documents. So let’s be honest, documentation is boring. But when it is well done, it is a very valuable asset. It allows to make once mind, settle the project, detail, save, index and share ideas and innovative solutions (God bless Ctrl+F). Documentation would be so much less painful if it wasn’t for some productivity traps that are so time consuming and generate pressure. Fortunately they can be avoided …
+
+Here is a non exhaustive list of what is unpleasant when writing a document, and how to overcome it.
+
+\section{Writing about a topic we do not master}
+There is often only one person dedicated to write all the documentation of a project. It avoids to manage a planing for several editors. Besides the final product will have one consistent tone. But this one person may not master all the different fields of technology taking part in the project to give a complete description of them. This situation has been encountered by a person we met.
+
+\begin{kaobox}[frametitle=A former teammate engineer destimonial]
+	I had been asked to write the tests to do on a product to ensure it meets our customer needs. It was a complex task because I was completely unfamiliar with one of the involved technologies. I had to ask to the expert and I worked hard to understand how it was working to finally write some relevant tests. It took me several iterations of them but it ended up working. I up skilled a lot on this technology but we may had lost some time and I got some cold sweats.
+\end{kaobox}
+
+Giving someone a task he isn’t skilled enough to perform without some learning can lead to an unsecured mindset. But sometimes, by lack of available experts, we cannot do otherwise.
+
+Today there are more and more collaborative softwares easing the teamwork (you can share a document and comment it in real time with Microsoft Word or Google Docs for example). We have met lots of companies making their own tutorial videos to share some specific knowledge between collaborators. Besides, the “reuse”, which means starting from previous documents to write the new ones, is becoming the rule. It is always easier to update a previous revision and adapt it to the new project, than starting the document from scratch.
+
+\section{The WYSIWYG editors}
+WYSIWYG stands for: “What You See Is What You Get”. It means what you see on screen is its real rendering. This is how works the main text editors like Microsoft Word. This makes those softwares very intuitive and easy to use. Everybody knows how to write something on Word!
+
+But when you write project documentation, you probably need to add comments, track modifications, draw tables, put some automatic fields (page numbers, etc)...
+
+This leads the software to use lots of RAM to be able to render the final view of your document in real time with all those features. It does it seamlessly for a short file. But your computer might start to sweat when your document reaches the hundred of pages. Then the text editor reactivity is getting slower and can finally crash (true story)!
+
+\LaTeX{}
+
+To avoid hitting the save button every minutes, there are text editors with different philosophy. LaTeX is one of those and it is free. But it requires some learning first. Its way to do is to differentiate the content from the document layout in different files. On one side you write your text with tags in it. Those tags will indicate where you want the graphical features such as a figure, a table, a title, etc. On the other side. At this moment your text doesn't look like the final rendering at all ! On a second file you configure the display of those graphical features. Finally you run LaTeX on those files and it builds your document. You may have to run several times LaTeX with different settings to get the exact document you had in mind. But then you will never have to correct the layout. It will never change because of a text modification. Content and layout do not interfere.
+
+Ok, I confess it seams a little more touchy than Word. But you should give it a try because it is so much more powerful and rather easy to master !
+Fortunately the WYSIWYG text editors get auto-save feature that are more and more effective.
+
+
+\section{Validation workflows}
+Usually every document shall be delivered to the customer. To ensure the document reaches the quality standard of the company, it must be checked by several reviewers through a validation workflow.
+
+But the reviewers expectations may vary if they don’t know the project with the same level of details. So a simple document review can turn into an argumentation about the project itself. Here we go again, those reviews must be planed:
+
+\begin{enumerate}
+	\item Select reviewers for the project and stick with them all along. You can assign them to specific parts of the document corresponding to there expertise.
+	\item Schedule the reviews in a finite period of time.
+	\item Collect their remarks in one place, like a spreadsheet for example. This will ease their management en then the document update.
+\end{enumerate}
+
+
+\section{The level of detail}
+Whatever the product, its specifications can be two pages long or one hundred. The difference lays in the level of details.
+
+There is no miracle spec. They can be very light, it is cheap but you risk to put the project on hold with non-anticipated issues. They can be very detailed and plan everything but not only they are very expensive but every review will be very long.
+
+So you have to meet halfway. A good practice is to make a first iteration allowing someone who doesn’t know the project to understand it and start working on it. Then, very regularly, with small steps, update the document throughout the project. Be careful not to overkill the quality, it is not a piece of art, it is a tool. Documentation must not drain you effort over more critical activities.
+
+
+\section{The lack of interest}
+Some documents have no other purpose than being archived. They are just new entries to some dead database and will never be referred back to ever again. They are artifacts from an obsolete but persistent workflow. The french philosopher Julia de Funes says that loss of meaning happens when the purpose disappears in favor of its mean.
+
+It is time to question this workflow because those documents have a cost (an not only a financial cost). What impact on the collaborator mindset will have this lack of interest for his work?
+
+On the other hand, such a documentation can be highly valuable! It can be a precious asset to kickstart similar new projects. If they are just saved and correctly indexed in a database (like Sharepoint), a simple request on its search engine will rapidly identify the most relevant documentation to reuse. And by constantly updating this database, the company not only saves but grows its knowledge, its expertise. It turns this previously frozen load into a living strategic asset. The author becomes aware that he is building knowledge other will trust and use. It is a far more gratifying activity!
+
+\section{Working blind}
+The blank page syndrome is not a novelist privilege. Being in charge of a complex specification document can be petrifying if we don’t know where to start. Should I start by this element or this one ? Haven’t I forgot anything ? Is it precise enough ? It is really clear ? Should I explain this or is it obvious?
+
+It is always a good move to start from something known and verified. We take a previous document, we drop what is out of context, we keep the frame and what is reusable and we start from here. The old parts will help us, guide us to be more exhaustive about the new project.
+
+The next step is to build templates with pre-filled sections. It avoids us to rewrite over and over the same elements in all documents. Those templates can have entitled sections for every possible aspect of the projects. All of them will rarely be filled but they help ensure we forgot nothing. Project after project, those templates are updated and the document quality rises up.
+
+The website FYI presents a very large amount of templates and dashboards for every productivity tools to Getting Work Done! (their moto)
+
+\section{Conclusion}
+After all, we see that documentation might not be a problem at all. Organization, effective management and methodology can easily turn what was a painful activity into a real engine for productivity and motivation!
+

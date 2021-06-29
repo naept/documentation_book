@@ -1,0 +1,89 @@
+\setchapterpreamble[u]{\margintoc}
+\chapter{Needs assessment : some good practices}
+\label{sec:NeedAssessement}
+When we write a needs assessment or a specification document for a supplier, we try to be as complete as possible. The document turns into a list of expected features. Here are some good practices to build the most efficient request.
+
+\section{Sorting the requirements by themes}
+The more requirement we have, the more difficult it will be to get the big picture. So we have to sort them by their subject, by the technology they are about, or by the expertise they require.
+
+For example, to specify a bike, we gather as follow:
+\begin{itemize}
+    \item All the requirements about the wheels
+    \item All the requirements about the brake system
+    \item All the requirements about the gear management
+    \item \dots
+\end{itemize}
+
+Therefore the supplier will easily be able to choose his best qualified experts for the job. The needs assessment document can now be shared with all of them, and each of them can take on the part about his field of expertise.
+
+\section{The shorter, the better}
+When writing a needs assessment, we may intend to write long descriptions for several reasons:
+
+\begin{itemize}
+    \item we are in a train of thoughts
+    \item we describe several connected elements
+    \item the subject is complex and requires lots of details
+\end{itemize}
+
+But the problem happens when the customer brings an evolution to its initial assessment. We have to find out what are the impacts on our features specifications. Without an accurate indexing of the requirement and a clear view of their content, we will have to read the whole document again. That can take a lot of time.
+
+But if, from the beginning, we have tried to write the shortest possible requirements, each of them deals only with a specific point, it will increase their quantity but it will also strongly optimizes the following:
+
+Their \textbf{indexing}: one requirement describes one limited subject.
+
+The easiness of their \textbf{update}: we know at one glance if the requirement must be updated because of an evolution.
+
+Their \textbf{traceability}: it is way easier to link the need to the feature.
+
+Their \textbf{testing}: the shorter the requirement, the easier to prove that the final product matches it.
+
+Their \textbf{reusability}: in a future project, if the client defines a similar need, it will be very easy to reuse the requirements from a previous project. You may have to perform some adaptations but they will be limited. Just like a piece of Lego you can reuse in a new construction.
+
+\section{A needs assessment requirement must describe a need, not a feature}
+When we write a needs assessment, the purpose is to subcontract the product development to a supplier. We do so because we do not have the resources or the knowledge to do it ourselves.
+
+But if we have a very detailed idea of what we want, we may be tempted to write a full feature specification. Which is a totally different document and we advise you to agree with your supplier about it. Unless, be careful not to give too much specific details and force your supplier. By giving him to much technical details, you won’t summon the expertise you were asking in the first place by hiring him. It is risky for the project to mix your need and the solution specification in the same document :
+
+\begin{itemize}
+    \item Are you sure the features you have in mind will match your needs? (Have you ever heard about the XY problem?)
+    \item Your feature solutions, are they all compliant?
+    \item What are you expecting from your supplier? An expertise or just some manpower?
+    \item What about its added value?
+    \item What about its responsibility?
+\end{itemize}
+
+That’s why it is important to distinguish your needs from the final product features.
+
+\section{Using "shall"}
+English language is very generous on how to express what we want. Some of the manners can be ambiguous and may compromise the message we want to deliver.
+
+\begin{itemize}
+    \item “I would like“, “I wish“… Is this a strong order or the expression of a nice to have?
+    \item “I want“… Is it a personal request? Is it part of the contract?
+    \item “It has not to”… Should we understand it has a strong prohibition or the freedom not to do it ?
+\end{itemize}
+
+First of all, you can choose any verb but the most important is to choose one and stick to it during all the project. A commonly used one we recommend is to employ “shall”. It is simple, kind of binary and rather not questionable:
+
+\begin{itemize}
+    \item “XXX shall be…” or “XXX shall do…“: it describes what is expected
+    \item “XXX shall not be…” or “XXX shall not do…“: it describes what must not be expected
+\end{itemize}
+
+\section{Pay attention to all the possible interpretations}
+A same text can be understood differently depending on the reader’s expertise, experience, position and even his current state of mind. So there is a chance that he has a slightly different interpretation than yours. This risk must be considered seriously as it can lead to severe project shift. Do your words express your thoughts? Is there any room for a misunderstanding? Do you share with your supplier the same meaning for every concepts of the project? The road to hell is paved with good intentions.
+
+So, before delivering a document, a simple peer review by one of your teammates will very efficiently reduce the risks of misunderstanding. And adding a glossary at the beginning of the document to define the sharpest concepts will reduce the risks even more.
+
+
+\section{Is your need testable?}
+Is it even possible to check that the product matches every specific requirement?
+
+Imagine that one of your requests asks for “the fastest” car. Alright. How can your supplier ensure you that the car he delivered is “the fastest”? This is a tricky demand hardly verifiable. First of all, how fast can a car go today? What if this speed is different than the one you had in mind? Who is right?
+
+It is much safer to build the requests with measurable elements. These won’t let any doubt about what you are expecting and will be undeniably verifiable.
+
+“The car shall be able to reach the speed of 250 kph”. The delivered car goes up to 300 kph. Ok! It matches the need, the requirement is validated!
+
+For more details about tests, read our article about validation plans. It is also in french, we will publish it in english soon too.
+

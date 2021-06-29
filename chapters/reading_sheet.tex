@@ -1,0 +1,167 @@
+\setchapterpreamble[u]{\margintoc}
+\chapter{Reading sheet, an easy tool for collaborative review}
+\label{sec:ReadingSheet}
+
+Finally ! You did it ! The document is finished. But before definitely freeze it, it has to be validated. So you send it to several people who will read it and comment it. But one week later, you have dozens of e-mail from them and 4 different corrected copies of your document. Those exchanges have brought more questions than answers. The reading sheet allows you to structure the validation process and to take every remark into account.
+
+Depending on the size and complexity of the project, it is required to validate its documentation by one or several people:
+
+\begin{itemize}
+    \item The project manager who is responsible for the customer
+    \item A peer reviewer who checks the technical content
+    \item A quality expert who ensures the document matches the company’s quality criteria
+    \item …
+\end{itemize}
+
+The customer who tells if the document meets his needs.
+Without a clear workflow, every reviewer can comment the document in a different way:
+\begin{itemize}
+    \item by mail
+    \item by telling you his remarks at the coffee machine
+    \item within his own document copy
+    \item in the MS Word comment section
+    \item by hand-writing his remarks on a print
+    \item …
+\end{itemize}
+
+Managing so many different channels can jeopardize the final quality of the document. How to be sure none of the remarks is lost? Is there some duplicated ones? Are they all consistent? Etc.
+
+\section{One file to collect them all}
+The reading sheet is a tool to collect all the remarks about a document (or anything else) in the same place and organize them to address them all.
+
+This is a simple spreadsheet, an MS Excel file, in which every line is a reviewer remark. It contains several columns to fill. Those columns are indicators allowing to sort the remarks and ease their management. In the following paragraph we will detail the most commonly used columns.
+
+
+\section{The columns}
+
+Here is an example of a reading sheet based on the feedback of our own experiences and the ones of people we met.
+
+\begin{table*}[h]
+	\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\ ID & Location & Category & Severity & Description & Reviewer & Responsible & Status & Comment & Action \\ 
+			\hline
+			&&&&&&&&&\\
+		\end{tabular}
+	\caption{Headers for a reading sheet}
+	\label{tab:HeaderRS}
+\end{table*}
+
+This list isn’t exhaustive. Some of them might be useless and you might need some other depending of your process. Please share with us in the comment section those data you use in your own reading sheets.
+
+\subsection{ID}
+It is a simple but unique number, incremented for each remark. The purpose is to identify it. If a remark must be erased, its ID has to be erased too and it cannot be used for another one or it could lead to misunderstanding.
+
+\subsection{Location}
+Any remark has to be precisely located! The author must not be forced to read the whole document to find the object of the remark. It wouldn’t be very efficient.
+A first way of doing this is to locate it with the document page. But it isn’t the best practice because if a section is added to the document, for example, the updated can turn to be totally irrelevent.
+The ideal way is to locate the remark with the smallest paragraph title its object belongs too. Like this, it doesn’t matter if the paging changes. The author will quickly find it with the table of content.
+
+The location shall be given by the reviewer.
+
+\subsection{Category}
+All the remarks are not from the same kind. They can be about:
+
+\begin{itemize}
+    \item a comprehension question
+    \item a spelling mistake
+    \item an author misunderstanding of the need
+    \item etc.
+\end{itemize}
+
+Therefore remarks can be sorted by categories. It will be easier to manage them. Fro example, the author may want to fix all misspelling ones before going to the semantics.
+
+It is important to have a limited number of categories for the sorting to be useful. But on the other hand, it is required that list to be exhaustive enough to cover any kind of remarks. Here are some possible categories:
+
+\begin{itemize}
+    \item Question
+    \item Misspelling
+    \item Nonsense
+    \item Layout
+    \item Error
+\end{itemize} 
+Category shall be given by the reviewer.
+
+\subsection{Severity}
+Severity is a second sorting criteria. Two remarks from the same category can have different weight. This weight can be defined by the severity.
+
+For example, the severity scale can go from level 1 telling the remark is painless for the project, to level 5 telling the pursuit of the project is stopped as long as this remark isn’t solved.
+
+It is really important that this severity scale is clearly defined and shared with everyone before starting the reviews.
+
+Severity shall be given by the reviewer.
+
+\subsection{Description}
+This is the description of the remark itself. It is important this description is as detailed as possible. You can insert a short document extract to ease its understanding, highlight important words. It shall be precise enough for the author to not have any doubt about the issue.
+
+Description shall be given by the reviewer (obviously).
+
+\subsection{Reviewer}
+If the author knows who gave each remark (several reviewer can add remarks to the reading sheet), he will know who to ask if he needs further information to solve the issue.
+
+Reviewer shall be given by… the reviewer.
+
+\subsection{Responsible}
+Here we talk about the person in charge of solving the remark. As this person can be different for some remarks (many people may have written the document together), the person responsible must be defined for each remark.
+
+But it is not up to the reviewer to decide who is in charge of his remark, beside he may not have a clue about who is competent for it.
+If there is only one author for the document, so it’s a no-brainer: responsible = author.
+If there are several authors, there must be a manager driving the team. So it is up to him to tell who is in charge of each remark.
+
+\subsection{Status}
+It simply is the status of the remark. Depending on your review workflow, this status can take several values. Here are some examples of possible values:
+
+\begin{itemize}
+    \item \textbf{Open} (set by the reviewer)\\When a new remark is added, it is “open” for resolution, meaning it shall be processed by the responsible.
+    \item \textbf{Duplicated} (set by the person responsible)\\If by any chance a remark tells the same thing than another one, the responsible gives this status to it. It happens when several reviewers use the shame reading sheet to gather their remarks.
+    \item \textbf{Accepted} (set by the person responsible)\\It is a temporary status. On a first hand, the responsible may have a look on all remarks at once. He may want to check for the duplicated ones or to see if all of them are relevant. When he wants to tell if a remark is relevant and he is willing the solve it, he sets this status.
+    \item \textbf{Rejected} (set by the person responsible)\\But when he believes a remark is not relevant, he can set it to”Rejected”. He shall explain why it is irrelevant in the comment section. Then the reviewer will decide if he agrees.
+    \item \textbf{Corrected} (set by the person responsible)\\The responsible has accepted and fixed the document according to the remark. He tells it is “Corrected” then the reviewer can check if he is OK the correction.
+    \item \textbf{Closed} (set by the reviewer)\\If the correction is satisfying, the reviewer can set the remark to “Closed”. Case closed!
+\end{itemize}
+
+\subsection{Comment}
+This section can be used by the responsible to bring a comment on the remark resolution. He can explain here how he corrected it.
+This is where he shall explain why he eventually rejected the remark.
+If the remark consisted in a simple question, this is where the answer shall be brought.
+
+Be careful to not turn this comment section into a chatroom about the remark.
+
+If required, the comment can be added by any stakeholder.
+
+\subsection{Action}
+Some remarks and resolutions can have a higher scope than just updating the document. They may require to update the whole project, change the contract, the planning, the budget, the product…
+
+So one remark can have some ripple effect implying the use of a project dashboard action, a bugtracking issue (see our french article, but soon translated)… Those item have their own identification references. So you can use the Action column to quote those references and ensure the traceability of the cross-application resolution.
+
+If required, the action shall be given by the responsible.
+
+\section{Best practices}
+\subsection{Index the reading sheet}
+As soon as you create a new reading sheet, give it a unique reference. It will allow everyone to quote it in the document it talks about and ease their management if you have several of them.
+\subsection{Use one for each document delivery}
+Every time you send a document to someone, if this someone can comment it, join a blank reading sheet. So he can add its remarks directly into it, saving you the task to copy and past them from his e-mail.
+\subsection{Traceability}
+When you start to update a document with all your reviewers remarks, indicate in the document that it has evolved thanks to the reading sheet <insert its reference>. So anyone can track back the origin of those evolutions.
+\subsection{Precision}
+Never hesitate to give the most exhaustive description for a remark. The responsible shall have enough information to not need to call you back to remove a doubt.
+
+Once more, the location in the document of the object of the remark shall be as precise as possible for the responsible shall not lose time finding it.
+
+\section{Pros and cons}
+\subsection{Pros}
+You can build a reading sheet out of any spreadsheet editor (MS Excel, Google Docs, OpenOffice…). So that is a really easy tool available to anyone.
+
+It is not only applicable to a document review but, actually, to any kind of reviews: source code, graphic elements, product… As soon as you need to collect remarks, the reading sheet is relevant.
+
+Even if there are several reviewers, you can send them each a reading sheet and then gather all of them into one (you can even write a script to do it automatically). But with the today online editors, it is even easier to work on a shared document.
+\subsection{Cons}
+Be careful not to use a reading sheet and its comment section as a forum with an endless message chain. Comments shall just be comments. Otherwise just pick up the phone.
+
+Obviously it is another file to manage in the project and you may already have lots of them.
+
+You better have a big screen or even two. It is nice to have the document you are reviewing on a side and its reading sheet on the other side. Switching from one to the other on a single screen might drive you crazy.
+
+\section{Conclusion}
+The reading sheet is a very easy and versatile collaborative tool. It allows you to structure and easily manage any reviewing process. Even if more and more software come with comment features, a reading sheet is a quick and simple solution to implement with anyone regardless of having the last fancy webapp. You can find a reading sheet template for free on our Github repository.
