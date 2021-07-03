@@ -75,7 +75,7 @@ A traceability matrix is an two-columns table where are exhaustively listed ever
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
-			Customer Requirements & Supplier Specifications\\
+			\textbf{Customer Requirements} & \textbf{Supplier Specifications}\\
             \hline
             Customer requirement 1 & Supplier specification 1\\
             \hline
@@ -120,7 +120,7 @@ We saw the customer’s point of view with the downstream traceability matrix. L
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
-			Supplier Specifications & Customer Requirements\\
+			\textbf{Supplier Specifications} & \textbf{Customer Requirements}\\
             \hline
             Supplier specification 1 & Customer requirement 1\\
             & Customer requirement 2\\
@@ -161,7 +161,7 @@ To avoid those questioning, the best is to create a new table listing only those
 	\centering
 		\begin{tabular}{|c|}
 			\hline
-			Non-covering specification matrix\\
+			\textbf{Non-covering specification matrix}\\
             \hline
             Supplier specification 5\\
             \hline
@@ -185,7 +185,7 @@ This matrix doesn’t connect two different documents, it links two revisions of
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
-			Evolutions & Comments\\
+			\textbf{Evolutions} & \textbf{Comments}\\
             \hline
             Customer requirement 2 & Deleted\\
             \hline
@@ -204,7 +204,7 @@ This matrix doesn’t connect two different documents, it links two revisions of
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
-			Evolutions & Comments\\
+			\textbf{Evolutions} & \textbf{Comments}\\
             \hline
             Customer requirement 2 & Deleted\\
             \hline
@@ -221,7 +221,7 @@ I highly advise to keep this deleted requirement in the downstream matrix. But i
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
-			Customer Requirements & Supplier Specifications\\
+			\textbf{Customer Requirements} & \textbf{Supplier Specifications}\\
             \hline
             Customer requirement 1 & Supplier specification 1\\
             \hline
@@ -238,7 +238,7 @@ I highly advise to keep this deleted requirement in the downstream matrix. But i
 
 \subsection{An update}
 
-\begin{table*}
+\begin{table}
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
@@ -249,7 +249,7 @@ I highly advise to keep this deleted requirement in the downstream matrix. But i
 		\end{tabular}
 	\caption{An update}
 	\label{tab:Update}
-\end{table*}
+\end{table}
 
 A previously existing requirement has been updated. It shall be highlighted because this evolution might have an impact on all the specifications that used to cover the previous revision of this requirement.
 
@@ -257,7 +257,7 @@ We can add a revision number to the requirement’s ID to show its level of upda
 
 Besides, this would be a good practice to add this revision number to all the requirements. By convention, the original revision of a requirement would be the number 1 : “Customer requirement X\textbf{.1}” (You can choose .0 as the number of the first iteration. It doesn’t really matter, as long as you stick to your convention through the project).
 
-\begin{table*}
+\begin{table}
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
@@ -274,11 +274,11 @@ Besides, this would be a good practice to add this revision number to all the re
 		\end{tabular}
 	\caption{Downstream traceability matrix with an updated requirement (we observe here that the covering specifications have been updated too for the specification document to be relevant)}
 	\label{tab:DownstreamTraceabilityMatrixWithUpdatedReq}
-\end{table*}
+\end{table}
 
 \subsection{A new one}
 
-\begin{table*}
+\begin{table}
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
@@ -289,11 +289,11 @@ Besides, this would be a good practice to add this revision number to all the re
 		\end{tabular}
 	\caption{A new requirement}
 	\label{tab:New}
-\end{table*}
+\end{table}
 
 The customer has added a new requirement to detail his need. Just like the other evolutions, without further indication a new requirement can be missed in a 200 hundred page document. Because a new requirement imply the definition of new specifications, its creation shall appear in the evolution matrix, otherwise you may fall through the net. Or as we say in french you get a “trou dans la raquette” (a hole in the racket).
 
-\begin{table*}
+\begin{table}
 	\centering
 		\begin{tabular}{|c|c|}
 			\hline
@@ -312,7 +312,7 @@ The customer has added a new requirement to detail his need. Just like the other
 		\end{tabular}
 	\caption{Downstream traceability matrix with a new requirement (4.1) which has been immediately covered by a new specification (5.1)}
 	\label{tab:DownstreamTraceabilityMatrixWithNewReq}
-\end{table*}
+\end{table}
 
 Long story short, any evolution described in the evolution matrix can, and shall, be also described in the other traceability matrices. It will produce duplicated information but allows you to double-check the consistency of your documents. If you find a loss going from one to another, then there might be a bug in the project. If there isn’t, then you have a very clear view on the project’s management.
 
@@ -323,7 +323,10 @@ So if you have a third revision (v3) then you should make an evolution matrix sh
 
 It is not mandatory, but it can be helpful to keep all the evolution matrices in every new revision. Like this, you’ll have a complete historic of your document without having to open all the previous revisions to have the big picture. But beware, in the end, it might be a lot of matrices!
 
-\begin{table*}
+\section{The Fantastic Matrices and where to find them}
+Let’s draw another table to explain where and how to draw those matrices:
+
+\begin{table}
 	\centering
 		\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
@@ -334,12 +337,26 @@ It is not mandatory, but it can be helpful to keep all the evolution matrices in
             &compliant with $U_1$ and $NC_1$ &&&&\\
             \hline
             \textbf{U}pstream& $U_1$ & $U_2$ & $U_3$ & ... & $U_N$ \\
+            &compliant with $D_1$ and $NC_1$ &&&&\\
             \hline
             \textbf{N}on \textbf{C}overing& $NC_1$ & $NC_2$ & $NC_3$ & ... & $NC_N$ \\
+            &compliant with $D_1$ and $U_1$ &&&&\\
             \hline
-            \textbf{E}volution& At this point there is no evolution matrix& $E_{1 -> 2}$ & & & \\
+            \textbf{E}volution& At this point there is & $E_{1 \to 2}$ & $E_{2 \to 3}$ &...& \[ \sum_{n=2}^{N} $E_{n-1 \to n}$ \] \\
+            &no evolution matrix&Evolutions from v1 to v2&+ $E_{1 \to 2}$&&\\
             \hline
 		\end{tabular}
 	\caption{Matrices to add to your document depending on its revision}
 	\label{tab:MatricesMatrix}
-\end{table*}
+\end{table}
+
+\section{Conclusion}
+The traceability matrix is a very powerful tool! It provides an exhaustive view on the customer’s need’s coverage; ensures that nothing is forgotten and allows the project to be customer’s-evolution-proof and makes it resilient.
+
+But what if I told you we only scratched the surface ?
+
+Indeed, we considered the links between the customer’s requirements and the supplier’s specifications. But in the process of a project, this is just the first step. Then more detailed specifications can be written (functional specifications for example) then design document, validation plan, etc. All of them are connected and the links between all those documents shall be tracked too for the same reasons.
+
+But no more drama. The concepts presented here are relevant for all the links. Some of them may require some adjustments. We may have some slightly different matrices for them. But let’s stop here for the moment.
+
+The more complex or the bigger a project is, the more documents it has. It will require more and more strictness to build the matrices without forgetting anything and ensure the customer’s need is 100\% covered. Among other issues, building trusted matrices and getting a consistent documentation is why we created Naept which does it automatically (and so much more!).
